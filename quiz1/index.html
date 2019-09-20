@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Style.css">
+	<link rel="icon" type="image/png" href="MeLogo.png">
+	<title>
+	ME
+	</title>
+</head>
+
+<body>
+	<nav class = "TopBar1">
+		<div class = "About">
+			<a href="profile.html" class="List1" style="padding-right: 10px">Profile</a>
+  			<a href="Hometown.html" class="List1" style="padding-right: 10px">Hometown</a>
+		</div>
+		<div class = "Social">
+			<a href="https://www.facebook.com/alfin.pradana.9" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/alfinpradana4" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/alfin_pradana/" class="fa fa-instagram"></a>
+		</div>
+	</nav>
+
+	<nav class = "TopBar2">
+		<div class = "About">
+  			<a href="food.html" class="List1" style="padding-top: 15px">Local Food</a>
+  			<a href="tourist.html" class="list1"style="padding-top: 15px">Tourism</a>
+		</div>
+		<div class = "Logo">
+			<p class = "judul">About Me</p>
+			<img src="MeLogo.png">
+		</div>
+		
+	</nav>
+
+	<nav>
+		<div class="slideshow-container">
+
+		<nav>
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="monas.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="hi.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="krl.jpg" style="width:100%">
+
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+	</nav>
+
+	<br>
+	
+	<nav>
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</nav>
+
+
+<div class="konten1" style="background-color: grey">
+	<h1 style="font-family: LuckiestGuy; color: black; padding-left: 50px"><font size="7">Quick View</font></h1>
+	<nav>
+		<div class="flip-card1">
+			<div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="mrt.jpg" alt="poster" style="width:500px;height:700px;">
+			    </div>
+			    <div class="flip-card-back">
+			    	<br></br>
+			    	<br></br>
+			      <h1><font size="5">THE</font></h1>
+			      <h1><font size="10">MRT</font></h1>
+			      <br></br>
+			    	<br></br>
+			      <p>
+			      	<font size="5"> The Jakarta Mass Rapid Transit (Indonesian: Moda Raya Terpadu Jakarta) or Jakarta MRT is a rapid transit system in Jakarta, the capital city of Indonesia. The trainset is colloquially named Ratangga which means war chariot in the ancient Javanese language. The Jakarta MRT is the first subway or underground railway system in Indonesia. The system is operated by PT MRT Jakarta, a municipally owned corporation of the city of Jakarta. Phase 1 of the project (Lebak Bulus to Bundaran HI) was officially opened on March 24, 2019. It operates 285 trips daily from 5 AM until midnight, with 5 minutes headway.</font>
+			      </p>
+		   	 	</div>
+	  		</div>
+		</div>
+		<div class="flip-card2">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="market.jpg" alt="poster" style="width:500px;height:700px;">
+		    </div>
+		    <div class="flip-card-back">
+		    	<br></br>
+		    	<br></br>
+		    	<br></br>
+		      <h1><font size="7">Traditional</font></h1>
+			  <h1><font size="10">Market</font></h1> 
+			  <p>
+			      	<font size="6"> Must Visit List :</font>
+			  </p>
+			  <br></br>
+			  <p>
+			  		<font size="5">
+			      	1. Tanah Abang
+			      	<br></br>
+			      	2. Pasar Mayestik
+			      	<br></br>
+			      	3. Pasar Santa
+			      	<br></br>
+			      	4. Pasar Baru
+			      	<br></br>
+			      	5. Pasar Blok A
+			      </font>
+			  </p>
+		    </div>
+		  </div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<div style="padding: 350px"></div>
+	<div class="footer">
+		<div class="tulisan">
+		<P> This Website Created by Alfin Pradana</P>
+		<h4> Content copyright 2019.  Alfinpr ™  Established September 19th , 2019. All rights reserved.</h4>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>

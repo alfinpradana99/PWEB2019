@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/png" href="MeLogo.png">
+  <title>
+  ME
+  </title>
+</head>
+
+<body>
+  <nav class = "TopBar2">
+    <div class = "About">
+        <a href="index.html" class="List1" style="padding-right: 10px">Home Page</a>
+    </div>
+    <div class = "Logo" style="padding-bottom: 10px">
+      <p class = "judul">About Me</p>
+      <img src="MeLogo.png">
+    </div>
+  </nav>
+
+  <nav>
+    <div class="slideshow-container">
+
+    <nav>
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="sg.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="berat.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="sch.jpg" style="width:100%">
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </nav>
+
+  <br>
+  
+  <nav>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </nav>
+
+
+<div class="konten1" style="background-color: grey">
+  <h1 style="font-family: LuckiestGuy; color: black; padding-left: 50px"><font size="7">the brief history of me</font></h1>
+  <nav>
+    <div class="flip-card1">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="bayi.jpg" alt="poster" style="width:500px;height:700px;">
+          </div>
+          <div class="flip-card-back">
+            <br></br>
+            <br></br>
+            <h1><font size="10">ME</font></h1>
+            <br></br>
+            <br></br>
+            <p>
+              <font size="6">My name is Alfin Pradana, they call me alfin. I was born in Jakarta at 28th September 1999. i have 2 siblings, and i am the oldest. my sister is 1 years away from me, and my brother is 4 years old right now. </font>
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="flip-card2">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="foto2.jpg" alt="poster" style="width:500px;height:700px;">
+        </div>
+        <div class="flip-card-back">
+          <br></br>
+          <br></br>
+          <br></br>
+          <h1><font size="7">ME</font></h1>
+        <p>
+              <font size="6">Currently, i am a student at Institut Teknologi Sepuluh Nopember, in Informatics major. My hobby is to traveling to places that never discovered before. i always dream too encounter all of the cultures that exist in this world. And my another hobbies is to watch and learn how to cook, eventho that i am not good at it :)</font>
+        </p>
+        <br></br>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div style="padding: 350px"></div>
+  <div class="footer">
+    <div class="tulisan">
+    <P> This Website Created by Alfin Pradana</P>
+    <h4> Content copyright 2019.  Alfinpr ™  Established September 19th , 2019. All rights reserved.</h4>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
